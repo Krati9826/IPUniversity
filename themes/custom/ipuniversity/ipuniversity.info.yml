@@ -1,0 +1,5 @@
+name: IP University
+type: theme
+description: 'Custom Theme for IP University.'
+package: Other
+core_version_requirement: ^8 || ^9
