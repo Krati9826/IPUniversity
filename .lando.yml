@@ -1,4 +1,31 @@
 name: indians-public-university
 recipe: drupal9
 config:
+  php: '8.1'
+  via: apache:4
   webroot: .
+  xdebug: true
+  drupal: true
+services:
+  pma:
+    type: phpmyadmin
+    hosts:
+      - database
+proxy:
+  pma:
+    - phpmyadmin.lndo.site
+tooling:
+  drupal:
+    service: appserver
+  drupalcs:
+    service: appserver
+    cmd: "/vendor/bin/phpcs --standard=Drupal,DrupalPractice"
+    description: Run phpcs Drupal Coding Standards against a given file or directory.
+  drupalcbf:
+    service: appserver
+    cmd: "/vendor/bin/phpcbf --standard=Drupal"
+    description: Automatically fix Drupal coding standards suggestions.
+  drupal-check:
+    service: appserver
+    cmd: vendor/bin/drupal-check -ad
+    description: Check Drupal code for deprecations and discover bugs via static analysis
