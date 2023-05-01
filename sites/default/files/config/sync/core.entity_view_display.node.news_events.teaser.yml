@@ -4,39 +4,19 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.news_events.body
-    - field.field.node.news_events.field_image
+    - field.field.node.news_events.field_news_events
     - node.type.news_events
   module:
-    - image
-    - text
     - user
 id: node.news_events.teaser
 targetEntityType: node
 bundle: news_events
 mode: teaser
 content:
-  body:
-    type: text_default
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_image:
-    type: image
-    label: above
-    settings:
-      image_link: ''
-      image_style: ''
-      image_loading:
-        attribute: lazy
-    third_party_settings: {  }
-    weight: 1
-    region: content
   links:
     settings: {  }
     third_party_settings: {  }
     weight: 2
     region: content
-hidden: {  }
+hidden:
+  field_news_events: true

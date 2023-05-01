@@ -1,0 +1,47 @@
+uuid: b286bd33-6aba-4994-88a4-f9f271ddcf4f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_events.field_description
+    - field.field.paragraph.news_events.field_news_events
+    - field.field.paragraph.news_events.field_overview
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.news_events
+  module:
+    - image
+    - text
+id: paragraph.news_events.default
+targetEntityType: paragraph
+bundle: news_events
+mode: default
+content:
+  field_description:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_news_events:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_overview:
+    type: string_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

@@ -1,20 +1,20 @@
-uuid: 26e02ae3-407d-49bb-9cdb-f4e1d61cdd34
+uuid: 235fe3df-2802-4530-80d1-5f21e91af2e3
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_image
-    - node.type.news_events
+    - field.storage.paragraph.field_news_events
+    - paragraphs.paragraphs_type.news_events
   module:
     - image
-id: node.news_events.field_image
-field_name: field_image
-entity_type: node
+id: paragraph.news_events.field_news_events
+field_name: field_news_events
+entity_type: paragraph
 bundle: news_events
-label: Image
+label: image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:

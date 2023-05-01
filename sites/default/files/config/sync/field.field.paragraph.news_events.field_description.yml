@@ -1,20 +1,20 @@
-uuid: 5a581b40-94ae-45b4-b2fd-e041bf7659ec
+uuid: 9dab864c-9840-4edd-be89-bac3de025eaf
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.body
-    - node.type.news_events
+    - field.storage.paragraph.field_description
+    - paragraphs.paragraphs_type.news_events
   module:
     - text
-id: node.news_events.body
-field_name: body
-entity_type: node
+id: paragraph.news_events.field_description
+field_name: field_description
+entity_type: paragraph
 bundle: news_events
 label: description
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
