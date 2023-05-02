@@ -1,0 +1,26 @@
+uuid: 7c330181-79dc-4645-bad2-405ec29c1713
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.our_top_recruiter.field_our_top_recruiter
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.our_top_recruiter
+  module:
+    - image
+id: paragraph.our_top_recruiter.default
+targetEntityType: paragraph
+bundle: our_top_recruiter
+mode: default
+content:
+  field_our_top_recruiter:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true
