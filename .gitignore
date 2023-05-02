@@ -41,3 +41,4 @@ sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 modules/contrib/
+sites/default/files/
