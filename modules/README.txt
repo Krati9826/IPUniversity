@@ -16,9 +16,6 @@ https://www.drupal.org/project/project_module.
 ORGANIZING MODULES IN THIS DIRECTORY
 ------------------------------------
 
-
-
-
 You may create subdirectories in this directory, to organize your added modules,
 without breaking the site. Some common subdirectories include "contrib" for
 contributed modules, and "custom" for custom modules. Note that if you move a
