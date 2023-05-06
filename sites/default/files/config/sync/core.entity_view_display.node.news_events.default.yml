@@ -1,0 +1,30 @@
+uuid: a4ad3293-f4e1-4c28-9199-8bbbf835495d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_events.field_news_events
+    - node.type.news_events
+  module:
+    - entity_reference_revisions
+    - user
+id: node.news_events.default
+targetEntityType: node
+bundle: news_events
+mode: default
+content:
+  field_news_events:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }

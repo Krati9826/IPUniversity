@@ -1,0 +1,43 @@
+uuid: 7e8260e6-2fc0-4bb5-a6dd-d8b5e9428ee0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_events.field_description
+    - field.field.paragraph.news_events.field_news_events
+    - field.field.paragraph.news_events.field_overview
+    - paragraphs.paragraphs_type.news_events
+  module:
+    - image
+    - text
+id: paragraph.news_events.default
+targetEntityType: paragraph
+bundle: news_events
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_news_events:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_overview:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden: {  }
