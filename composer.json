@@ -24,7 +24,7 @@
         "drupal/core-vendor-hardening": "^9.5",
         "drupal/paragraphs": "^1.15",
         "drupal/restui": "1.21",
-        "drush/drush": "^11.5"
+        "drush/drush": "^11.6"
     },
     "conflict": {
         "drupal/drupal": "*"
