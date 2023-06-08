@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains top_recruiters.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function top_recruiters_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the top_recruiters module.
+    case 'help.page.top_recruiters':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Api module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

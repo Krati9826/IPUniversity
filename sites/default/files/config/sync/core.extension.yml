@@ -4,6 +4,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  alumni_speaker: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -37,7 +38,6 @@ module:
   path_alias: 0
   rest: 0
   restui: 0
-  sample_rest_resource: 0
   search: 0
   serialization: 0
   shortcut: 0
@@ -45,6 +45,7 @@ module:
   taxonomy: 0
   text: 0
   toolbar: 0
+  top_recruiters: 0
   tour: 0
   update: 0
   user: 0
