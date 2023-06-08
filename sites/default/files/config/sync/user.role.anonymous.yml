@@ -4,9 +4,11 @@ status: true
 dependencies:
   config:
     - node.type.alumni_speak
+    - node.type.news_events_view_more
     - node.type.our_top_recruiters
     - node.type.student_life
     - rest.resource.custom_get_alumni_speaker
+    - rest.resource.custom_get_news_events_view_more
     - rest.resource.custom_get_students_life
     - rest.resource.custom_get_top_recruiters
   module:
@@ -23,13 +25,16 @@ permissions:
   - 'access content overview'
   - 'administer node display'
   - 'administer node fields'
+  - 'create news_events_view_more content'
   - 'create our_top_recruiters content'
   - 'create student_life content'
   - 'delete any alumni_speak content'
+  - 'edit any news_events_view_more content'
   - 'edit any our_top_recruiters content'
   - 'edit any student_life content'
   - 'edit own alumni_speak content'
   - 'edit own our_top_recruiters content'
   - 'restful get custom_get_alumni_speaker'
+  - 'restful get custom_get_news_events_view_more'
   - 'restful get custom_get_students_life'
   - 'restful get custom_get_top_recruiters'
