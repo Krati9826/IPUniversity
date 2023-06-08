@@ -1,11 +1,30 @@
 uuid: 1371c56e-f8ae-45a5-8752-f41c21602ffc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.alumni_speak
+    - node.type.our_top_recruiters
+    - rest.resource.custom_get_alumni_speaker
+    - rest.resource.custom_get_top_recruiters
+  module:
+    - field_ui
+    - node
+    - rest
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'create our_top_recruiters content'
+  - 'delete any alumni_speak content'
+  - 'edit any our_top_recruiters content'
+  - 'edit own alumni_speak content'
+  - 'edit own our_top_recruiters content'
+  - 'restful get custom_get_alumni_speaker'
+  - 'restful get custom_get_top_recruiters'
