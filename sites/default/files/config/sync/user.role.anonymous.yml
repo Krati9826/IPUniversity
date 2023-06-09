@@ -1,11 +1,46 @@
 uuid: 1371c56e-f8ae-45a5-8752-f41c21602ffc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.alumni_speak
+    - node.type.news_events_view_more
+    - node.type.our_top_recruiters
+    - node.type.student_life
+    - rest.resource.custom_get_alumni_speaker
+    - rest.resource.custom_get_news_events_view_more
+    - rest.resource.custom_get_side_block
+    - rest.resource.custom_get_students_life
+    - rest.resource.custom_get_top_recruiters
+  module:
+    - block
+    - block_content
+    - field_ui
+    - node
+    - rest
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
-permissions: {  }
+permissions:
+  - 'access content overview'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'create news_events_view_more content'
+  - 'create our_top_recruiters content'
+  - 'create student_life content'
+  - 'delete any alumni_speak content'
+  - 'edit any news_events_view_more content'
+  - 'edit any our_top_recruiters content'
+  - 'edit any student_life content'
+  - 'edit own alumni_speak content'
+  - 'edit own our_top_recruiters content'
+  - 'restful get custom_get_alumni_speaker'
+  - 'restful get custom_get_news_events_view_more'
+  - 'restful get custom_get_side_block'
+  - 'restful get custom_get_students_life'
+  - 'restful get custom_get_top_recruiters'

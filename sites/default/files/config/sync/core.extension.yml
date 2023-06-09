@@ -4,6 +4,7 @@ module:
   admin_toolbar: 0
   admin_toolbar_search: 0
   admin_toolbar_tools: 0
+  alumni_speaker: 0
   automated_cron: 0
   big_pipe: 0
   block: 0
@@ -14,6 +15,7 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  custom_module: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
@@ -30,6 +32,7 @@ module:
   menu_link_content: 0
   menu_ui: 0
   mysql: 0
+  news_events_view_more: 0
   node: 0
   options: 0
   page_cache: 0
@@ -37,14 +40,16 @@ module:
   path_alias: 0
   rest: 0
   restui: 0
-  sample_rest_resource: 0
   search: 0
   serialization: 0
   shortcut: 0
+  side_block: 0
+  students_life: 0
   system: 0
   taxonomy: 0
   text: 0
   toolbar: 0
+  top_recruiters: 0
   tour: 0
   update: 0
   user: 0
