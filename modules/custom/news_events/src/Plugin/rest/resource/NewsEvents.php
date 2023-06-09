@@ -17,18 +17,30 @@ use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
  *   }
  * )
  */
-class SampleGetRestResource extends ResourceBase {
+class NewsEvents extends ResourceBase {
   /**
    * Responds to entity GET requests.
    * @return \Drupal\rest\ResourceResponse
    */
     public function get() {
+      //$nids = \Drupal::entityQuery('node')->condition('type','news_events_')->execute();
       $nid =  \Drupal::request()->query->get('nid');
-      foreach ($nid as $key=>$value) {        
-         $nodes[$key] =  \Drupal\node\Entity\Node::load($nid[$key]);        
+      $nids = explode(',', $nid);
+      foreach($nids as $key => $value)
+      {   
+        $nodes[$key] =  \Drupal\node\Entity\Node::load($value);
+      }
+
+      foreach ($nodes as $key=>$values) {        
+        $arrayValue[$key] = [
+          $description[$key] = $values->field_description->value,
+          $field_image[$key] = $values->field_image->entity->uri->value,
+          $field_overview[$key] = $values->field_overview->value,
+          $field_about_school_[$key] = $values->field_about_school_->value,
+        ];
         }
      
-      return new ResourceResponse($nodes);
+      return new ResourceResponse($arrayValue);
     }
       
   }

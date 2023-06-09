@@ -12,6 +12,7 @@ dependencies:
     - rest.resource.custom_get_side_block
     - rest.resource.custom_get_students_life
     - rest.resource.custom_get_top_recruiters
+    - rest.resource.custom_news_events
   module:
     - block
     - block_content
@@ -44,3 +45,4 @@ permissions:
   - 'restful get custom_get_side_block'
   - 'restful get custom_get_students_life'
   - 'restful get custom_get_top_recruiters'
+  - 'restful get custom_news_events'
