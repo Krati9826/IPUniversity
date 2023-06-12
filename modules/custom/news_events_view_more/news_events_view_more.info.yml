@@ -1,5 +1,0 @@
-name: news events view more
-type: module
-description: Module for implementing Custom Rest Service.
-core_version_requirement: ^8.8 || ^9
-package: Example

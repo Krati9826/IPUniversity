@@ -1,7 +1,0 @@
-name: side block
-type: module
-description: Module for implementing Custom Rest Service.
-core_version_requirement: ^8.8 || ^9
-package: Example
-dependencies:
-  - block

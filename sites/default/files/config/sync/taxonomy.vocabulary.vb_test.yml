@@ -1,8 +1,0 @@
-uuid: 225b81cf-3a96-4354-8065-9dc649ce9a8a
-langcode: en
-status: true
-dependencies: {  }
-name: 'Vb Test'
-vid: vb_test
-description: 'Vb Test'
-weight: 0
