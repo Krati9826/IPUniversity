@@ -30,7 +30,7 @@ class NewsEvents extends ResourceBase {
       {   
         $nodes[$key] =  \Drupal\node\Entity\Node::load($value);
       }
-
+      $arrayValue = [];
       foreach ($nodes as $key=>$values) {        
         $arrayValue[$key] = [
           $description[$key] = $values->field_description->value,

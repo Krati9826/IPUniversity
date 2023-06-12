@@ -23,9 +23,9 @@ class StudentsLife extends ResourceBase {
    * @return \Drupal\rest\ResourceResponse
    */
     public function get() {
-       $nids = \Drupal::entityQuery('node')->condition('type','student_life')->execute();
+       //$nids = \Drupal::entityQuery('node')->condition('type','student_life')->execute();
        
-       //$nid =  \Drupal::request()->query->get('nid');
+       $nid =  \Drupal::request()->query->get('nid');
        $nodes =  \Drupal\node\Entity\Node::load($nid);
        $pid = $nodes->field_student_life_paragraph;
      
