@@ -35,7 +35,7 @@ class AlumniSpeaker extends ResourceBase {
         $paragraph_field[$key] =[ 
           $field_name[$key] = $paragraph[$key]->field_name->value,
           $field_profession[$key] = $paragraph[$key]->field_profession->value,
-          $field_about_person[$key] = $paragraph[$key]->field_about_person_->value,  
+          $field_about_person[$key] = strip_tags($paragraph[$key]->field_about_person_->value),
           $imageUri[$key] =  $field_img[$key]->entity->uri->value,
      
         ]; 
