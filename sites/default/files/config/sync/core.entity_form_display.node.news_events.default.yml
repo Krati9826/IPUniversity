@@ -1,4 +1,4 @@
-uuid: 6d241ac9-0936-4502-9b4d-016e9b588b6d
+uuid: 3e75ec1f-9675-4971-8c67-db051524adbb
 langcode: en
 status: true
 dependencies:
@@ -15,13 +15,13 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 2
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
   field_news_events:
     type: paragraphs
-    weight: 26
+    weight: 121
     region: content
     settings:
       title: Paragraph
@@ -39,34 +39,34 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 5
+    weight: 30
     region: content
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    weight: 3
+    weight: 15
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 6
+    weight: 120
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    weight: 4
+    weight: 16
     region: content
     settings:
       display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield
-    weight: 0
+    weight: -5
     region: content
     settings:
       size: 60
@@ -74,7 +74,7 @@ content:
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 1
+    weight: 5
     region: content
     settings:
       match_operator: CONTAINS
