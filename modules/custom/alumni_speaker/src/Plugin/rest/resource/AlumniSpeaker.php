@@ -41,7 +41,7 @@ class AlumniSpeaker extends ResourceBase {
         ]; 
       
       }
-      return new ResourceResponse($paragraph_field);
+      return new ResourceResponse($nid);
     }
       
   }
