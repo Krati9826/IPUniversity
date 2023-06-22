@@ -1,0 +1,21 @@
+uuid: 1c3ceae5-26df-48ad-9020-9e2ba4cdc09c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_studentlife_title
+    - node.type.student_life
+  module:
+    - text
+id: node.student_life.field_studentlife_title
+field_name: field_studentlife_title
+entity_type: node
+bundle: student_life
+label: Studentlife_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

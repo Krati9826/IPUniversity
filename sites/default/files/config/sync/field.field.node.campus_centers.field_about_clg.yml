@@ -1,0 +1,52 @@
+uuid: d1e0909c-cef0-4624-8cc7-5f688075fa7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_about_clg
+    - node.type.campus_centers
+    - paragraphs.paragraphs_type.about_section
+  module:
+    - entity_reference_revisions
+id: node.campus_centers.field_about_clg
+field_name: field_about_clg
+entity_type: node
+bundle: campus_centers
+label: About_clg
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      about_section: about_section
+    negate: 0
+    target_bundles_drag_drop:
+      about_section:
+        weight: 9
+        enabled: true
+      centers:
+        weight: 10
+        enabled: false
+      five_img:
+        weight: 11
+        enabled: false
+      gallerypic:
+        weight: 12
+        enabled: false
+      img_gallery:
+        weight: 13
+        enabled: false
+      main_course:
+        weight: 14
+        enabled: false
+      news_events:
+        weight: 15
+        enabled: false
+      our_top_recruiter:
+        weight: 16
+        enabled: false
+field_type: entity_reference_revisions

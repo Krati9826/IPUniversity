@@ -1,0 +1,21 @@
+uuid: c28f5aec-ece6-4364-b6c8-efaaf4d08915
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_title
+    - node.type.campus_centers
+  module:
+    - text
+id: node.campus_centers.field_main_title
+field_name: field_main_title
+entity_type: node
+bundle: campus_centers
+label: main_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text
