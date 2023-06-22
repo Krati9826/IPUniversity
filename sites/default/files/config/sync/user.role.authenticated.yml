@@ -8,6 +8,20 @@ dependencies:
   module:
     - field_ui
     - media
+    - node.type.alumni_speak
+    - node.type.news_events_view_more
+    - node.type.our_top_recruiters
+    - node.type.student_life
+    - rest.resource.custom_get_alumni_speaker
+    - rest.resource.custom_get_news_events_view_more
+    - rest.resource.custom_get_side_block
+    - rest.resource.custom_get_students_life
+    - rest.resource.custom_get_top_recruiters
+    - rest.resource.custom_news_events
+  module:
+    - block
+    - block_content
+    - field_ui
     - node
     - rest
 _core:
@@ -17,8 +31,31 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
+<<<<<<< HEAD
   - 'administer node form display'
   - 'create campus_centers content'
   - 'edit any campus_centers content'
   - 'restful get center_campus_discription'
   - 'view media'
+=======
+  - 'access content overview'
+  - 'administer block_content form display'
+  - 'administer blocks'
+  - 'administer node display'
+  - 'administer node fields'
+  - 'create news_events_view_more content'
+  - 'create our_top_recruiters content'
+  - 'create student_life content'
+  - 'delete any alumni_speak content'
+  - 'edit any news_events_view_more content'
+  - 'edit any our_top_recruiters content'
+  - 'edit any student_life content'
+  - 'edit own alumni_speak content'
+  - 'edit own our_top_recruiters content'
+  - 'restful get custom_get_alumni_speaker'
+  - 'restful get custom_get_news_events_view_more'
+  - 'restful get custom_get_side_block'
+  - 'restful get custom_get_students_life'
+  - 'restful get custom_get_top_recruiters'
+  - 'restful get custom_news_events'
+>>>>>>> dfb3f4a8a988049ca53de4034a98fddfb52a199e

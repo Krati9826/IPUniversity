@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains sample_rest_resource.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function news_events_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the news_events module.
+    case 'help.page.news_events':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Api module') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,7 @@
+custom-module-global-style:
+  version: 1.x
+  css:
+    theme:
+      css/my-module.css: {}
+  js:
+    js/my-module.js: {}
