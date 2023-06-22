@@ -1,0 +1,32 @@
+uuid: 2b752e36-baa7-4cab-ba9b-d546d3a78738
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_life.field_image
+    - node.type.student_life
+  module:
+    - image
+    - user
+id: node.student_life.default
+targetEntityType: node
+bundle: student_life
+mode: default
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
