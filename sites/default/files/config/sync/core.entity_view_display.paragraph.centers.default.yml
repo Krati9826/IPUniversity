@@ -1,0 +1,57 @@
+uuid: 459d6483-3d4e-46b0-a675-f989fcaac1ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.centers.field_centers_img
+    - field.field.paragraph.centers.field_centers_link
+    - field.field.paragraph.centers.field_centers_subtitle
+    - field.field.paragraph.centers.field_centers_title
+    - paragraphs.paragraphs_type.centers
+  module:
+    - image
+    - link
+    - text
+id: paragraph.centers.default
+targetEntityType: paragraph
+bundle: centers
+mode: default
+content:
+  field_centers_img:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_centers_link:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_centers_subtitle:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_centers_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

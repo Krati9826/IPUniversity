@@ -1,0 +1,10 @@
+uuid: a491d7c3-d781-495f-83fb-a013506b9ea3
+langcode: en
+status: true
+dependencies: {  }
+id: main_course
+label: Main_Course
+icon_uuid: null
+icon_default: null
+description: 'For logo, subject, discription'
+behavior_plugins: {  }
