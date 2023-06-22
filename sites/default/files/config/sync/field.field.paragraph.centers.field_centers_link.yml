@@ -1,0 +1,23 @@
+uuid: 9ee45b4c-c58b-4d03-a74e-52d36b416deb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_centers_link
+    - paragraphs.paragraphs_type.centers
+  module:
+    - link
+id: paragraph.centers.field_centers_link
+field_name: field_centers_link
+entity_type: paragraph
+bundle: centers
+label: Centers_link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 17
+field_type: link

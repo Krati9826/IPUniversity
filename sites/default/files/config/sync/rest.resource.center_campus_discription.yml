@@ -1,0 +1,18 @@
+uuid: 513740ac-5afd-4038-bc11-49fc6cc500aa
+langcode: en
+status: true
+dependencies:
+  module:
+    - center_campus
+    - serialization
+    - user
+id: center_campus_discription
+plugin_id: center_campus_discription
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

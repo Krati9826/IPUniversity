@@ -1,0 +1,38 @@
+uuid: 58e65ddc-aa0b-474c-85ff-e3649e48f1b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_centers_img
+    - paragraphs.paragraphs_type.centers
+  module:
+    - image
+id: paragraph.centers.field_centers_img
+field_name: field_centers_img
+entity_type: paragraph
+bundle: centers
+label: Centers_img
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

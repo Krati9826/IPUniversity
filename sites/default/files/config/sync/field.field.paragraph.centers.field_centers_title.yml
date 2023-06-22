@@ -1,0 +1,21 @@
+uuid: 80e9d452-98f4-489b-be54-3bc8e642c4e5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_centers_title
+    - paragraphs.paragraphs_type.centers
+  module:
+    - text
+id: paragraph.centers.field_centers_title
+field_name: field_centers_title
+entity_type: paragraph
+bundle: centers
+label: Centers_title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

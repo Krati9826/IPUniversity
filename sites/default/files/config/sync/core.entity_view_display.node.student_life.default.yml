@@ -1,0 +1,39 @@
+uuid: 837c7189-3396-4b83-a432-5848d94d0f40
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.student_life.field_studentlife_pic
+    - field.field.node.student_life.field_studentlife_title
+    - node.type.student_life
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.student_life.default
+targetEntityType: node
+bundle: student_life
+mode: default
+content:
+  field_studentlife_pic:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_studentlife_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,26 @@
+uuid: a698b09e-16b2-4812-a92b-84689653233e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.gallerypic.field_gallerypic
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.gallerypic
+  module:
+    - image
+id: paragraph.gallerypic.default
+targetEntityType: paragraph
+bundle: gallerypic
+mode: default
+content:
+  field_gallerypic:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

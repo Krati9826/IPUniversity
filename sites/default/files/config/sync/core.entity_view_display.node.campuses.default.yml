@@ -1,0 +1,39 @@
+uuid: 36d10575-0ef2-49d0-8833-5adbbafbea93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.campuses.field_campus_title
+    - field.field.node.campuses.field_campusdesc
+    - node.type.campuses
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.campuses.default
+targetEntityType: node
+bundle: campuses
+mode: default
+content:
+  field_campus_title:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_campusdesc:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }
