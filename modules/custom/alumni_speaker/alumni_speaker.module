@@ -6,10 +6,24 @@
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
+use Drupal\file\Entity\File;
+
 
 /**
  * Implements hook_help().
  */
+function alumni_speaker_preprocess_image(&$variables) {
+  if (isset($variables['uri'])) {
+    // Change the image src path to absolute path.
+    $variables['attributes']['src'] = file_create_url($variables['uri']);
+    // For drupal > 9.3.x
+    // @see https://www.drupal.org/node/2940031
+    /** @var \Drupal\Core\File\FileUrlGenerator $file_url_generator */
+    $file_url_generator = \Drupal::service('file_url_generator');
+    $variables['attributes']['src'] = $file_url_generator->generateAbsoluteString($variables['uri']);
+  }
+}
+
 function alumni_speaker_help($route_name, RouteMatchInterface $route_match) {
   switch ($route_name) {
     // Main module help for the alumni_speaker module.
