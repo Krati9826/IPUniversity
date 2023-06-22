@@ -25,24 +25,24 @@ class StudentsLife extends ResourceBase {
     public function get() {
        //$nids = \Drupal::entityQuery('node')->condition('type','student_life')->execute();
        
-       $nid =  \Drupal::request()->query->get('nid');
-       $nodes =  \Drupal\node\Entity\Node::load($nid);
-       $pid = $nodes->field_student_life_paragraph;
+       $storage = \Drupal::entityTypeManager()->getStorage('node');
+       // Define the query to retrieve nodes.
+       $query = $storage->getQuery()
+         ->condition('type', 'student_life') // Optionally, filter by content type.
+         ->condition('status', 1); // Optionally, filter by node status (1 for published).
+         
+         $entity_ids = $query->execute();
+         $nodes = $storage->loadMultiple($entity_ids);
      
 
-      foreach($pid as $key => $para){
-        $paragraph[$key] = $para->entity;
+      foreach($nodes as $key => $value){
         
-      
-        $field_img[$key] = $paragraph[$key]->field_image;
-        //dump($field_img[$key]);
+        $array_field[$key] = [
 
-        $paragraph_field[$key] = [
-
-        $imageUri[$key] =  $field_img[$key]->entity->uri->value,
+        $imageUri[$key] =  $value->field_image->entity->uri->url,
         ]; 
       }
-      return new ResourceResponse($paragraph_field);
+      return new ResourceResponse($array_field);
     }
       
   }
