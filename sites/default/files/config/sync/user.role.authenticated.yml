@@ -31,13 +31,11 @@ label: 'Authenticated user'
 weight: 1
 is_admin: false
 permissions:
-<<<<<<< HEAD
   - 'administer node form display'
   - 'create campus_centers content'
   - 'edit any campus_centers content'
   - 'restful get center_campus_discription'
   - 'view media'
-=======
   - 'access content overview'
   - 'administer block_content form display'
   - 'administer blocks'
@@ -58,4 +56,3 @@ permissions:
   - 'restful get custom_get_students_life'
   - 'restful get custom_get_top_recruiters'
   - 'restful get custom_news_events'
->>>>>>> dfb3f4a8a988049ca53de4034a98fddfb52a199e
