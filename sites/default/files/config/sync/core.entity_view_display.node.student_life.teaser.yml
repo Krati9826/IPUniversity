@@ -1,0 +1,24 @@
+uuid: 3068faf3-64ae-4798-ba5d-5c77d1544faf
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.student_life.field_studentlife_pic
+    - field.field.node.student_life.field_studentlife_title
+    - node.type.student_life
+  module:
+    - user
+id: node.student_life.teaser
+targetEntityType: node
+bundle: student_life
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_studentlife_pic: true
+  field_studentlife_title: true

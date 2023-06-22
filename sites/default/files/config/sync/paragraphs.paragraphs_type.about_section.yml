@@ -1,0 +1,10 @@
+uuid: d7381100-6773-4062-9ad1-0b627a4194bb
+langcode: en
+status: true
+dependencies: {  }
+id: about_section
+label: About_section
+icon_uuid: null
+icon_default: null
+description: 'about section for main college contains'
+behavior_plugins: {  }

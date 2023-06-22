@@ -1,0 +1,21 @@
+uuid: 92878a63-1026-4e3a-bf6a-4b6e02966449
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_course_subtitle
+    - paragraphs.paragraphs_type.main_course
+  module:
+    - text
+id: paragraph.main_course.field_course_subtitle
+field_name: field_course_subtitle
+entity_type: paragraph
+bundle: main_course
+label: Course_subtitle
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

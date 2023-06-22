@@ -1,11 +1,24 @@
 uuid: 1371c56e-f8ae-45a5-8752-f41c21602ffc
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - node.type.campus_centers
+    - rest.resource.center_campus_discription
+  module:
+    - field_ui
+    - media
+    - node
+    - rest
 _core:
   default_config_hash: j5zLMOdJBqC0bMvSdth5UebkprJB8g_2FXHqhfpJzow
 id: anonymous
 label: 'Anonymous user'
 weight: 0
 is_admin: false
-permissions: {  }
+permissions:
+  - 'administer node form display'
+  - 'create campus_centers content'
+  - 'edit any campus_centers content'
+  - 'restful get center_campus_discription'
+  - 'view media'

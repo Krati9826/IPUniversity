@@ -1,0 +1,30 @@
+uuid: fae9a21d-8dfb-4b58-892e-8cd8a850a6fc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.about_section.field_about_subti
+    - field.field.paragraph.about_section.field_about_title
+    - paragraphs.paragraphs_type.about_section
+  module:
+    - text
+id: paragraph.about_section.default
+targetEntityType: paragraph
+bundle: about_section
+mode: default
+content:
+  field_about_subti:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_about_title:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
