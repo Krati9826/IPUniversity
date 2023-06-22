@@ -1,0 +1,8 @@
+uuid: 67d984b2-c15e-4159-9b7c-ea8ae1bfb60a
+langcode: en
+status: true
+dependencies: {  }
+name: COURSES
+vid: programs
+description: ''
+weight: 0

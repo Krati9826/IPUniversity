@@ -1,0 +1,18 @@
+uuid: 2a97931b-3a33-42d4-bb4d-b20bf6e6f994
+langcode: en
+status: true
+dependencies:
+  module:
+    - course_taxonomy
+    - serialization
+    - user
+id: course_taxonomy
+plugin_id: course_taxonomy
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

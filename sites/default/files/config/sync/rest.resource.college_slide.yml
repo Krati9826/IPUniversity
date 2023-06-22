@@ -1,0 +1,18 @@
+uuid: b776040f-f0c0-495c-90c8-72f9b5e5731c
+langcode: en
+status: true
+dependencies:
+  module:
+    - college_slide
+    - serialization
+    - user
+id: college_slide
+plugin_id: college_slide
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

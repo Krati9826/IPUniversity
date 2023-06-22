@@ -1,0 +1,22 @@
+uuid: 46d4f8a2-24c6-4c7d-9c5a-7e6c73447ef2
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.camp.field_imagevalue
+    - node.type.camp
+  module:
+    - user
+id: node.camp.teaser
+targetEntityType: node
+bundle: camp
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_imagevalue: true

@@ -1,0 +1,32 @@
+uuid: f0aca58a-cfb4-48f5-b939-0d6f6fb9467c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.camp.field_imagevalue
+    - node.type.camp
+  module:
+    - image
+    - user
+id: node.camp.default
+targetEntityType: node
+bundle: camp
+mode: default
+content:
+  field_imagevalue:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

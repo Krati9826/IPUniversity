@@ -1,0 +1,18 @@
+uuid: 66ee19eb-f3a9-4153-ba11-2cd4ca5fe4c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - university_information
+    - user
+id: university_information
+plugin_id: university_information
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
