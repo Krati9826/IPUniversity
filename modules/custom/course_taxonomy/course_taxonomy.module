@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains course_taxonomy.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function course_taxonomy_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the course_taxonomy module.
+    case 'help.page.course_taxonomy':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Api module') . '</p>';
+      return $output;
+
+    default:
+  }
+}
