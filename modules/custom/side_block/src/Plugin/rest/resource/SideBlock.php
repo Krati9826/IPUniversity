@@ -39,7 +39,7 @@ class SideBlock extends ResourceBase {
              $value = $para->entity;
              $result[$key]=[
               $field_title = $value->field_title->value,
-              $field_description = $value->field_description->value,
+              $field_description = strip_tags($value->field_description->value),
              ];
             
            }

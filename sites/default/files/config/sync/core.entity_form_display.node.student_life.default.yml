@@ -1,15 +1,14 @@
-uuid: 39332559-b29c-47c7-b6fe-4d1a5fc00354
+uuid: fb4d448a-4a5d-4a18-b7dc-4b9753b7b2ee
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.student_life.field_studentlife_pic
-    - field.field.node.student_life.field_studentlife_title
+    - field.field.node.student_life.field_image
+    - image.style.thumbnail
     - node.type.student_life
   module:
-    - paragraphs
+    - image
     - path
-    - text
 id: node.student_life.default
 targetEntityType: node
 bundle: student_life
@@ -21,31 +20,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_studentlife_pic:
-    type: paragraphs
-    weight: 122
-    region: content
-    settings:
-      title: Paragraph
-      title_plural: Paragraphs
-      edit_mode: open
-      closed_mode: summary
-      autocollapse: none
-      closed_mode_threshold: 0
-      add_mode: dropdown
-      form_display_mode: default
-      default_paragraph_type: ''
-      features:
-        collapse_edit_all: collapse_edit_all
-        duplicate: duplicate
-    third_party_settings: {  }
-  field_studentlife_title:
-    type: text_textfield
+  field_image:
+    type: image_image
     weight: 121
     region: content
     settings:
-      size: 60
-      placeholder: ''
+      progress_indicator: throbber
+      preview_image_style: thumbnail
     third_party_settings: {  }
   path:
     type: path

@@ -1,0 +1,10 @@
+uuid: e4fdfa3e-3c6c-4bbc-a1fb-4f32ba4c67e6
+langcode: en
+status: true
+dependencies: {  }
+id: news_events_view_more
+label: 'News & Events view more'
+icon_uuid: null
+icon_default: null
+description: 'News & Events view more'
+behavior_plugins: {  }

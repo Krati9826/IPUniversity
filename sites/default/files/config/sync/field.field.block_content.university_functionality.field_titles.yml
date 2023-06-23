@@ -1,0 +1,19 @@
+uuid: 046b4562-5631-436e-b470-5176b775f184
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.university_functionality
+    - field.storage.block_content.field_titles
+id: block_content.university_functionality.field_titles
+field_name: field_titles
+entity_type: block_content
+bundle: university_functionality
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

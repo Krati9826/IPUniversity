@@ -1,0 +1,19 @@
+uuid: a62835ae-2d2a-4132-95c7-4194c88db930
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.university_functionality
+    - field.storage.block_content.field_sub_tittle
+id: block_content.university_functionality.field_sub_tittle
+field_name: field_sub_tittle
+entity_type: block_content
+bundle: university_functionality
+label: 'sub tittle'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

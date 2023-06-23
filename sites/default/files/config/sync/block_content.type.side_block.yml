@@ -1,0 +1,8 @@
+uuid: 6aa1c6e0-444c-4830-a184-5f70c8a6ae04
+langcode: en
+status: true
+dependencies: {  }
+id: side_block
+label: 'side block'
+revision: 0
+description: 'side block'

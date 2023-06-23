@@ -4,9 +4,14 @@
 use Drupal\rest\Plugin\ResourceBase;
 use Drupal\rest\ResourceResponse;
 use Psr\Log\LoggerInterface;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Drupal\file\Entity\File;
+
+
 /**
  * Provides a resource to get view modes by entity and bundle.
  * @RestResource(
@@ -23,27 +28,24 @@ class AlumniSpeaker extends ResourceBase {
    * @return \Drupal\rest\ResourceResponse
    */
     public function get() {
+
+      $storage = \Drupal::entityTypeManager()->getStorage('node');
+      // Define the query to retrieve nodes.
+      $query = $storage->getQuery()
+        ->condition('type', 'alumni_speak') // Optionally, filter by content type.
+        ->condition('status', 1); // Optionally, filter by node status (1 for published).
      
-     $nid =  \Drupal::request()->query->get('nid');
-      
-      $nodes =  \Drupal\node\Entity\Node::load($nid);
-      $pid = $nodes->field_alumni_speak_paragraph;
-      foreach($pid as $key=> $para){
-        $paragraph[$key] = $para->entity;
-        $field_img[$key] = $paragraph[$key]->field_image;
-            
-        $paragraph_field[$key] =[ 
-          $field_name[$key] = $paragraph[$key]->field_name->value,
-          $field_profession[$key] = $paragraph[$key]->field_profession->value,
-          $field_about_person[$key] = $paragraph[$key]->field_about_person_->value,  
-          $imageUri[$key] =  $field_img[$key]->entity->uri->value,
-     
-        ]; 
-      
-      }
-      return new ResourceResponse($paragraph_field);
-    }
-      
-  }
-    
-  
+        $entity_ids = $query->execute();
+        $nodes = $storage->loadMultiple($entity_ids);
+        foreach($nodes as $key => $value)
+        {
+          $imagePaths[$key]=[
+          $body = $value->field_body->value,
+          ];
+        }
+  return new ResourceResponse($imagePaths);
+
+}
+}
+
+ 

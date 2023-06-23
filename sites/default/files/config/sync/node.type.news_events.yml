@@ -1,4 +1,4 @@
-uuid: 51fb2c09-c07e-40d0-986b-a6cac4106d52
+uuid: 093493d2-9920-4a67-a6bd-f70cb961fe9d
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'News & Events'
+name: 'news events'
 type: news_events
-description: 'News & Events'
+description: 'news events'
 help: ''
 new_revision: true
 preview_mode: 1

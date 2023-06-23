@@ -11,5 +11,4 @@ targetEntityType: block_content
 bundle: basic
 mode: default
 content: {  }
-hidden:
-  body: true
+hidden: {  }

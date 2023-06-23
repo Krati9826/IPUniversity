@@ -1,0 +1,8 @@
+uuid: 52a629d3-21eb-4302-a9ea-d97ac12ca1d6
+langcode: en
+status: true
+dependencies: {  }
+id: university_functionality
+label: 'University functionality'
+revision: 0
+description: 'University functionality'

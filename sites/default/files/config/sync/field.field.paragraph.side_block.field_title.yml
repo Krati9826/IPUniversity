@@ -1,0 +1,19 @@
+uuid: 67d5d2a1-665b-4039-bb3a-7f2b56322318
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.side_block
+id: paragraph.side_block.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: side_block
+label: title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

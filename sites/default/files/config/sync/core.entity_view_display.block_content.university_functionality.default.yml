@@ -1,0 +1,30 @@
+uuid: 6a00d51b-6b79-4185-ae86-372bd5de29f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.university_functionality
+    - field.field.block_content.university_functionality.field_sub_tittle
+    - field.field.block_content.university_functionality.field_titles
+id: block_content.university_functionality.default
+targetEntityType: block_content
+bundle: university_functionality
+mode: default
+content:
+  field_sub_tittle:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_titles:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }
