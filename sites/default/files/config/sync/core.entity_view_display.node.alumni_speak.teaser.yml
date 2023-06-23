@@ -1,16 +1,16 @@
-uuid: af7b5ec4-6b2e-4ea4-97ba-cc70b1543e79
+uuid: 906dcfe2-1584-418c-b6ba-bf848d4f6d24
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.student_life.field_image
-    - node.type.student_life
+    - field.field.node.alumni_speak.field_body
+    - node.type.alumni_speak
   module:
     - user
-id: node.student_life.teaser
+id: node.alumni_speak.teaser
 targetEntityType: node
-bundle: student_life
+bundle: alumni_speak
 mode: teaser
 content:
   links:
@@ -19,4 +19,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_image: true
+  field_body: true

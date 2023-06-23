@@ -1,0 +1,25 @@
+uuid: 0ea61de4-c821-4725-ad05-05131c341d16
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:university_functionality:6b6ebf44-d395-4b1a-90d6-7bf6ef5393af'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: universityfunctionality_2
+theme: olivero
+region: breadcrumb
+weight: 0
+provider: null
+plugin: 'block_content:6b6ebf44-d395-4b1a-90d6-7bf6ef5393af'
+settings:
+  id: 'block_content:6b6ebf44-d395-4b1a-90d6-7bf6ef5393af'
+  label: 'University Functionality_2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

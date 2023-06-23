@@ -1,0 +1,18 @@
+uuid: 6fca7541-4f9d-4b08-b07e-723ca999ff16
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - top_recruiters
+    - user
+id: custom_get_top_recruiters
+plugin_id: custom_get_top_recruiters
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

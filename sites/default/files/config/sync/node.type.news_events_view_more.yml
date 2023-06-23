@@ -1,4 +1,4 @@
-uuid: a48455e2-c69f-406d-9ff9-ce7f87677662
+uuid: 428d4599-3fe4-448b-997e-9763a6883e60
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'STUDENT LIFE'
-type: student_life
-description: 'STUDENT LIFE'
+name: 'News & Events view more'
+type: news_events_view_more
+description: 'News & Events view more'
 help: ''
 new_revision: true
 preview_mode: 1

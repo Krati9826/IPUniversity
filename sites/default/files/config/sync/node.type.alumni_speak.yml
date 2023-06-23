@@ -1,4 +1,4 @@
-uuid: a48455e2-c69f-406d-9ff9-ce7f87677662
+uuid: 367bf306-99fe-495e-acaf-82b9f1aa1b73
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'STUDENT LIFE'
-type: student_life
-description: 'STUDENT LIFE'
+name: 'ALUMNI SPEAK'
+type: alumni_speak
+description: 'ALUMNI SPEAK'
 help: ''
 new_revision: true
 preview_mode: 1

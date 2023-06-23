@@ -1,0 +1,18 @@
+uuid: 90308463-966a-4c26-a9b9-3878dc8c44df
+langcode: en
+status: true
+dependencies:
+  module:
+    - news_events
+    - serialization
+    - user
+id: custom_news_events
+plugin_id: custom_news_events
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

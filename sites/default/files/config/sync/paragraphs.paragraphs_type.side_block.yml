@@ -1,0 +1,10 @@
+uuid: 16fd104c-dc61-4f45-8666-eef61985dc73
+langcode: en
+status: true
+dependencies: {  }
+id: side_block
+label: 'side block'
+icon_uuid: null
+icon_default: null
+description: 'side block'
+behavior_plugins: {  }

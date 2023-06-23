@@ -1,16 +1,16 @@
-uuid: af7b5ec4-6b2e-4ea4-97ba-cc70b1543e79
+uuid: 612cbb24-f659-4ace-917d-8c1b3a091e66
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.student_life.field_image
-    - node.type.student_life
+    - field.field.node.news_events_.field_description
+    - node.type.news_events_
   module:
     - user
-id: node.student_life.teaser
+id: node.news_events_.teaser
 targetEntityType: node
-bundle: student_life
+bundle: news_events_
 mode: teaser
 content:
   links:
@@ -19,4 +19,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_image: true
+  field_description: true

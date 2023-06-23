@@ -1,0 +1,38 @@
+uuid: 3bc8e5b1-925e-45e2-b18d-348ff40179cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.news_events_view_more.field_description
+    - field.field.paragraph.news_events_view_more.field_image
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.news_events_view_more
+  module:
+    - image
+    - text
+id: paragraph.news_events_view_more.default
+targetEntityType: paragraph
+bundle: news_events_view_more
+mode: default
+content:
+  field_description:
+    type: text_textarea_with_summary
+    weight: 1
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  field_image:
+    type: image_image
+    weight: 0
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

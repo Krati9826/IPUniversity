@@ -1,17 +1,16 @@
-uuid: fb4d448a-4a5d-4a18-b7dc-4b9753b7b2ee
+uuid: e397f38c-0e93-4879-9820-9d8eb02b9057
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.student_life.field_image
-    - image.style.thumbnail
-    - node.type.student_life
+    - field.field.node.news_events_view_more.field_news_events_view_more_para
+    - node.type.news_events_view_more
   module:
-    - image
+    - paragraphs
     - path
-id: node.student_life.default
+id: node.news_events_view_more.default
 targetEntityType: node
-bundle: student_life
+bundle: news_events_view_more
 mode: default
 content:
   created:
@@ -20,13 +19,23 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_image:
-    type: image_image
+  field_news_events_view_more_para:
+    type: paragraphs
     weight: 121
     region: content
     settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
+      title: Paragraph
+      title_plural: Paragraphs
+      edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: dropdown
+      form_display_mode: default
+      default_paragraph_type: ''
+      features:
+        collapse_edit_all: collapse_edit_all
+        duplicate: duplicate
     third_party_settings: {  }
   path:
     type: path
