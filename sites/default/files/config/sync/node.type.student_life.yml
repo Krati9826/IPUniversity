@@ -1,0 +1,18 @@
+uuid: b1b26861-380d-4af8-ac4f-916af2dd5f6b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Student Life'
+type: student_life
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

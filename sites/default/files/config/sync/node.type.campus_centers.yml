@@ -1,0 +1,18 @@
+uuid: 334799ae-2145-4d67-961a-ea600af6aeb8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Campus/Centers
+type: campus_centers
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true
