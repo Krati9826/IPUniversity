@@ -1,0 +1,18 @@
+uuid: 428d4599-3fe4-448b-997e-9763a6883e60
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'News & Events view more'
+type: news_events_view_more
+description: 'News & Events view more'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

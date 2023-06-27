@@ -1,0 +1,22 @@
+uuid: 906dcfe2-1584-418c-b6ba-bf848d4f6d24
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.alumni_speak.field_body
+    - node.type.alumni_speak
+  module:
+    - user
+id: node.alumni_speak.teaser
+targetEntityType: node
+bundle: alumni_speak
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_body: true

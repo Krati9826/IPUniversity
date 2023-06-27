@@ -1,4 +1,4 @@
-uuid: b1b26861-380d-4af8-ac4f-916af2dd5f6b
+uuid: a48455e2-c69f-406d-9ff9-ce7f87677662
 langcode: en
 status: true
 dependencies:
@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Student Life'
+name: 'STUDENT LIFE'
 type: student_life
-description: ''
+description: 'STUDENT LIFE'
 help: ''
 new_revision: true
 preview_mode: 1

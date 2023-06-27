@@ -1,0 +1,30 @@
+uuid: ff96f06c-8902-4572-af18-f87ca1edc827
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_events_view_more.field_news_events_view_more_para
+    - node.type.news_events_view_more
+  module:
+    - entity_reference_revisions
+    - user
+id: node.news_events_view_more.default
+targetEntityType: node
+bundle: news_events_view_more
+mode: default
+content:
+  field_news_events_view_more_para:
+    type: entity_reference_revisions_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

@@ -1,0 +1,18 @@
+uuid: 2abe5e0b-6892-4e4f-b9e9-2505a5842775
+langcode: en
+status: true
+dependencies:
+  module:
+    - serialization
+    - students_life
+    - user
+id: custom_get_students_life
+plugin_id: custom_get_students_life
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

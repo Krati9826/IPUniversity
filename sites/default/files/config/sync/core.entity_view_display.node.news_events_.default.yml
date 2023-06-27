@@ -1,0 +1,28 @@
+uuid: 3284127e-bdad-4005-9f34-1ddaa41bb517
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.news_events_.field_description
+    - node.type.news_events_
+  module:
+    - text
+    - user
+id: node.news_events_.default
+targetEntityType: node
+bundle: news_events_
+mode: default
+content:
+  field_description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

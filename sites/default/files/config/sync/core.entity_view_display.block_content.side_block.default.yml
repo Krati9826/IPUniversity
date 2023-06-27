@@ -1,0 +1,24 @@
+uuid: 172ebca9-c89a-4b23-97ff-df62c66b83fb
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.side_block
+    - field.field.block_content.side_block.field_side_block
+  module:
+    - entity_reference_revisions
+id: block_content.side_block.default
+targetEntityType: block_content
+bundle: side_block
+mode: default
+content:
+  field_side_block:
+    type: entity_reference_revisions_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden: {  }

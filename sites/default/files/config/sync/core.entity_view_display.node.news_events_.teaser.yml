@@ -1,0 +1,22 @@
+uuid: 612cbb24-f659-4ace-917d-8c1b3a091e66
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.news_events_.field_description
+    - node.type.news_events_
+  module:
+    - user
+id: node.news_events_.teaser
+targetEntityType: node
+bundle: news_events_
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_description: true

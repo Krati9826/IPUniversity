@@ -1,11 +1,10 @@
-uuid: 3068faf3-64ae-4798-ba5d-5c77d1544faf
+uuid: af7b5ec4-6b2e-4ea4-97ba-cc70b1543e79
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.student_life.field_studentlife_pic
-    - field.field.node.student_life.field_studentlife_title
+    - field.field.node.student_life.field_image
     - node.type.student_life
   module:
     - user
@@ -20,5 +19,4 @@ content:
     weight: 100
     region: content
 hidden:
-  field_studentlife_pic: true
-  field_studentlife_title: true
+  field_image: true

@@ -7,6 +7,8 @@ use Psr\Log\LoggerInterface;
 use Drupal\Core\Session\AccountProxyInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Exception\AccessDeniedHttpException;
+use Drupal\node\Entity\Node;
+use Drupal\Core\Entity\EntityStorageInterface;
 /**
  * Provides a resource to get view modes by entity and bundle.
  * @RestResource(
@@ -23,20 +25,25 @@ class NewsEvents extends ResourceBase {
    * @return \Drupal\rest\ResourceResponse
    */
     public function get() {
-      //$nids = \Drupal::entityQuery('node')->condition('type','news_events_')->execute();
-      $nid =  \Drupal::request()->query->get('nid');
-      $nids = explode(',', $nid);
-      foreach($nids as $key => $value)
-      {   
-        $nodes[$key] =  \Drupal\node\Entity\Node::load($value);
-      }
+     
+      $storage = \Drupal::entityTypeManager()->getStorage('node');
+      
+     $query = $storage->getQuery()
+    ->condition('type', 'news_events_') // Optionally, filter by content type.
+    ->condition('status', 1) // Optionally, filter by node status (1 for published).
+    ->range(0, 10); // Optionally, limit the number of nodes retrieved.
+  
+  // Execute the query and retrieve the node IDs.
+  $entity_ids = $query->execute();
+  
+  // Load the nodes using the retrieved IDs.
+  $nodes = $storage->loadMultiple($entity_ids);
+     
       $arrayValue = [];
       foreach ($nodes as $key=>$values) {        
         $arrayValue[$key] = [
           $description[$key] = $values->field_description->value,
-          $field_image[$key] = $values->field_image->entity->uri->value,
-          $field_overview[$key] = $values->field_overview->value,
-          $field_about_school_[$key] = $values->field_about_school_->value,
+          
         ];
         }
      

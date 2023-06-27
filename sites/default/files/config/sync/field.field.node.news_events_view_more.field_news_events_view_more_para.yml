@@ -1,0 +1,43 @@
+uuid: 8781a41f-bcf2-4810-9291-235fd70dbac1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_news_events_view_more_para
+    - node.type.news_events_view_more
+    - paragraphs.paragraphs_type.news_events_view_more
+  module:
+    - entity_reference_revisions
+id: node.news_events_view_more.field_news_events_view_more_para
+field_name: field_news_events_view_more_para
+entity_type: node
+bundle: news_events_view_more
+label: 'News & Events view more paragraph'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      news_events_view_more: news_events_view_more
+    negate: 0
+    target_bundles_drag_drop:
+      alumni_speak:
+        weight: 6
+        enabled: false
+      news_events:
+        weight: 7
+        enabled: false
+      news_events_view_more:
+        weight: 8
+        enabled: true
+      our_top_recruiter:
+        weight: 9
+        enabled: false
+      student_life:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions
