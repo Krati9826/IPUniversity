@@ -1,0 +1,8 @@
+uuid: ae9c957e-ceef-44a5-965d-e40e1e999ca5
+langcode: en
+status: true
+dependencies: {  }
+name: 'University Information'
+vid: university_informat
+description: ''
+weight: 0
